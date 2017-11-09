@@ -22,11 +22,31 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
-
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+         <script type="text/javascript">
+  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+ </script>
 </head>
 <body>
 
@@ -36,13 +56,20 @@
     <!-- nav bar -->
     <div class="row nav-bar">
       <div class="four columns">
-          <a href="index.html">Home</a>
+          <a href="index.html"><button>Home</button></a>
         </div>
             <div class="four columns">
           <h1>Flipbook</h1>
         </div>
           <div class="four columns">
-            <a href="voeding.html">Voeding</a>
+               <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Voeding</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
           </div>
       </div>
     </div>
