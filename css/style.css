@@ -1,8 +1,20 @@
+/*Layout*/
 .row{
 	border-bottom: 1px solid black;
 	padding: 20px;
 }
 
+/*Intro*/
+.header{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .intro{
+    display: inline-block;
+}
+
+/*Breadcrumb*/
 #breadcrumb {
     background: #fff;
     display: inline-block;
