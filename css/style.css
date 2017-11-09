@@ -4,7 +4,10 @@
 	padding: 20px;
 }
 
-/*Nav bar*/
+.row.nav-bar{
+	padding-left: 25%;
+
+}
 .title{
     text-align: center;
 }
