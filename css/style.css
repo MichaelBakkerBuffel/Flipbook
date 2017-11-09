@@ -4,6 +4,11 @@
 	padding: 20px;
 }
 
+/*Nav bar*/
+.title{
+    text-align: center;
+}
+
 /*Intro*/
 .header{
     padding: 20px 0;
