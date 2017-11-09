@@ -1,9 +1,60 @@
+/*Layout*/
 .row{
 	border-bottom: 1px solid black;
 	padding: 20px;
 }
 
+<<<<<<< HEAD
 .row.nav-bar{
 
 	padding-left: 25%;
+=======
+/*Nav bar*/
+.title{
+    text-align: center;
+}
+
+/*Intro*/
+.header{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .intro{
+    display: inline-block;
+}
+
+/*Breadcrumb*/
+#breadcrumb {
+    background: #fff;
+    display: inline-block;
+    padding: 1px;
+    padding-right: 18px;
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+}
+
+#breadcrumb a {
+    display: inline-block;
+    color: #fff;
+    background: #3598dc;
+    padding: 5px 30px 5px 30px;
+    position: relative;
+    text-decoration: none;
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%);
+    margin-right: -17px;
+}
+
+/* Just to show that even around the arrow head, the mouse pointer is at the correct link */
+#breadcrumb a:hover {
+    color: #000;
+}
+
+/* first link should not have anything cliped on the left side */
+#breadcrumb a:first-child {
+    -webkit-clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+    padding-left: 20px;
+>>>>>>> 87a8744d964e5b01f2ac1d13f4d293de40237f34
 }
