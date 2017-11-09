@@ -2,3 +2,8 @@
 	border-bottom: 1px solid black;
 	padding: 20px;
 }
+
+.row.nav-bar{
+
+	padding-left: 25%;
+}
