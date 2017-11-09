@@ -89,6 +89,18 @@
     padding: 45px;
     }
 
+#interventies {
+    height: 100px;
+    border: 1px solid #000;
+    padding: 45px;
+    }
+
+#evalueren {
+    height: 100px;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 45px;
+    }
 #acties {
     height: 100px;
     border: 1px solid #000;
