@@ -151,16 +151,21 @@ li a {
     padding: 10px;
 }
 
-#bodyblocks .title{
+#bodyblocks .title {
     text-align: center;
+}
+
+#bodyblocks button {
+    width: 70%;
 }
 
 #main-bottom .title{
     text-align: center;
 }
 
-#main-bottom .mainbutton {
-    margin-left: 20%;
+.mainbutton button {
+       width: 60%;
+       height: 30%;
 }
 
 #bodyimage {
