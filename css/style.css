@@ -30,6 +30,7 @@ li a {
     background-repeat:no-repeat;
     background-position: center center;
     background-image:url(../images/mvp-home.jpg);
+    height: 400px;
 }
 
 .header .intro{
@@ -95,15 +96,10 @@ li a {
 }
 
 #bodyblocks {
-    height: 175px;
-/*    width: 200px;
-*/    border: 1px solid #000;
+    border: 1px solid #000;
+    margin-top: -80px;
+    background: #fff;
     }
-
-#extralow {
-    margin-top: 10%;
-}
-
 
 
 
