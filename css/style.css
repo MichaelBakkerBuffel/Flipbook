@@ -10,6 +10,20 @@
     text-align: center;
 }
 
+.navbar a {
+    background: #01b0f1;
+    padding: 60px 25px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #FFF;
+    color: #000;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -140,11 +154,17 @@ li a {
 #bodyblocks .title{
     text-align: center;
 }
+
 #main-bottom .title{
     text-align: center;
 }
-#bodyimage {
 
+#main-bottom .mainbutton {
+    margin-left: 20%;
+}
+
+#bodyimage {
     margin-left: 25%;
 }
-}
+
+
