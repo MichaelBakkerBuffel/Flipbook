@@ -79,15 +79,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Bent u Mantelzorger?
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="#">Ja</a>
+                    <a href="#">Nee</a>
+                    <a href="#">Weet ik niet</a>
                 </div>
             </div>
         </div>
