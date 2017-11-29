@@ -1,5 +1,3 @@
-<!-- create.blade.php -->
-
 @extends('master')
 @section('content')
 <div class="container">

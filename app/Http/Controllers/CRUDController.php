@@ -16,7 +16,6 @@ class CRUDController extends Controller
     public function index()
     {
         $cruds = Crud::all()->toArray();
-
         return view('crud.index', compact('cruds'));
     }
 
