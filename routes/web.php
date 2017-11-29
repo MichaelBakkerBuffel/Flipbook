@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/read', function() {
+    $results = DB::select('select * from artikelen where id = ?', [1]);
+    foreach($results as $result) {
+    return $result->naam;
+    }
+});
