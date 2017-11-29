@@ -21,3 +21,5 @@ Route::get('/read', function() {
     return $result->naam;
     }
 });
+
+Route::resource('crud', 'CRUDController');

@@ -23,7 +23,7 @@ class CRUDController extends Controller
      */
     public function create()
     {
-        //
+         return view('crud.create');
     }
 
     /**
