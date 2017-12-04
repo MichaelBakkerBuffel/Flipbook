@@ -66,7 +66,6 @@ class CRUDController extends Controller
     public function edit($id)
     {
         $crud = Crud::find($id);
-
         return view('crud.edit', compact('crud','id'));
     }
 
