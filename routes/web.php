@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', [
+Route::get('/voeding', [
     'uses' => 'ContentController@index',
     ]);
 

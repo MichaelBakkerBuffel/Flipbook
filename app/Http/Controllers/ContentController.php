@@ -10,7 +10,8 @@ class ContentController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        // get all posts + desc ordering and show 3 posts
+        $posts = Post::with('author')->orderBy('created_at', 'desc')->paginate(3);
         return view("blog.show", compact('posts'));
     }
 }
