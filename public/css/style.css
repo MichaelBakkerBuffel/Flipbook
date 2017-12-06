@@ -1,67 +1,38 @@
-           html, body {
-                background-color: #2a4264;
-                color: #fff;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+/* ============= bodyblocks =============*/
 
-            .full-height {
-                height: 100vh;
-            }
+.bodyblock-offset{
+    position: relative;
+    margin-bottom: -100px;
+}
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+button{
+    color: white;
+    padding: 10px;
+    background-color: #242424;
+    border-radius: 5px;
+    border: none;
+}
 
-            .position-ref {
-                position: relative;
-            }
+.bodyblock p{
+    margin: 20px;
+}
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+.bodyblock-padding{
+    background-color: #343434;
+    color: white;
+    margin: 0 20px;
+    padding: 20px;
+}
 
-            .content {
-                text-align: center;
-            }
+/* ============= hulp bij mantelzorg =============*/
+.backgroudcolor-offset{
+    background-color: #888;
+    margin: 20px 0;
+    padding: 20px 0;
+    color: #fff;
+}
 
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #fff;
-                padding: 0 25px;
-                font-size: 16px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            button {
-                background: #f59331;
-                color: #fff;
-                padding: 10px 20px;
-                border: 0;
-                border-radius: 10px 10px;
-                margin-left: -30px;
-            }
-
-            button {
-
-            }
-
-            button:hover {
-                 background: #1eb1ee;
-            }
+/* ============= Tips =============*/
+.tips{
+    text-align: left;
+}
