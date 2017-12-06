@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blog.index');
-});
+Route::get('/', [
+    'uses' => 'ContentController@index',
+    ]);
 
 Route::get('/home', function () {
     return view('blog.show');
