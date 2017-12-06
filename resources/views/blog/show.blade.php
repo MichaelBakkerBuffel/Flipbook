@@ -16,8 +16,8 @@
                 @endforeach
 
                 </div>
-
-                {{ $posts->links() }}   
+                <!-- pagination -->
+                {{ $posts->links() }}
 
                        @include('layouts.sidebar')
 
