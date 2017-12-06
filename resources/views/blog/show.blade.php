@@ -9,6 +9,7 @@
 
                     <h2>{{ $post->title }}</h2>
                     <p>{{ $post->excerpt }}</p>
+                    <p>{{ $post->author->name }}</p> 
 
                 @endforeach
 
