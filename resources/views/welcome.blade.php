@@ -13,27 +13,24 @@
 
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+        <div id="header">
+            <div id="logo" alt="logo"></div>
+            <div id="navbar">
+                <a href="/voeding">Voeding</a>
+                <a href="/voeding">Valpreventie</a>
+                <a href="/voeding">Instanties</a>
+                <a href="/voeding">Mantelcheck</a>
+            </div>
+        </div>
 
+        <div id="mantelcheck">Bent u een mantelzorger?</div>
             <div class="content">
-                <div class="title m-b-md">
-                    Bent u een Mantelzorger?
+
+
                 </div>
 
                 <div class="links">
-                   <a href="/mantelzorger"><button>Ja</button></a>
-                   <a href="/geenmantelzorger"><button>Nee</button></a>
-                   <a href="/mantelcheck"><button>Weet ik niet</button></a>
+
                 </div>
             </div>
         </div>
