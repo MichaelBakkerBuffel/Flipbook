@@ -11,7 +11,7 @@
 </head>
 <body>
         <header>
-                <nav class="navbar navbar-default navbar-fixed-top">
+                <nav class="navbar navbar-default navbar-fixed-top second-color">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -27,10 +27,10 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="the-navbar-collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Voeding</a></li>
-                                <li><a href="#">Valpreventie</a></li>
-                                <li><a href="#">Mantelcheck</a></li>
+                                <li class="active"><a href="{{ url('/home') }}">Home</a></li>
+                                <li><a href="{{ url('/voeding') }}">Voeding</a></li>
+                                <li><a href="{{ url('/valpreventie') }}">Valpreventie</a></li>
+                                <li><a href="{{ url('/mantelcheck') }}">Mantelcheck</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container -->
@@ -39,7 +39,7 @@
 
         @yield('content')
 
-            <footer>
+            <footer class="second-color">
                 <div class="container">
                         <div class="row">
                                 <div class="col-md-8">

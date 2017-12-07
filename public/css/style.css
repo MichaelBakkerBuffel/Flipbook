@@ -1,3 +1,15 @@
+html body .prime-color{
+    background-color: #f59331;
+}
+
+html body .second-color{
+    background-color: #2a4264;
+}
+
+html body .third-color{
+    background-color: #1eb1ee;
+}
+
 /* ============= bodyblocks =============*/
 
 .bodyblock-offset{
@@ -8,7 +20,7 @@
 button{
     color: white;
     padding: 10px;
-    background-color: #242424;
+    background-color: #f59331;
     border-radius: 5px;
     border: none;
 }

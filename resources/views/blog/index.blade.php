@@ -12,7 +12,7 @@
 <div class="container text-center">
 	<div class="row">
 		<div class="col-md-4 bodyblock">
-			<div class="bodyblock-padding">
+			<div class="bodyblock-padding second-color">
 				<h3>Kopje</h3>
 				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
 				<p>hier komt text</p>
@@ -20,7 +20,7 @@
 			</div>
 	    </div>
 	    <div class="col-md-4 bodyblock">
-		     <div class="bodyblock-padding">
+		     <div class="bodyblock-padding second-color">
 				<h3>Kopje</h3>
 				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
 				<p>hier komt text</p>
@@ -28,7 +28,7 @@
 			</div>
 	    </div>
 	    <div class="col-md-4 bodyblock">
-			 <div class="bodyblock-padding">
+			 <div class="bodyblock-padding second-color">
 				<h3>Kopje</h3>
 				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
 				<p>hier komt text</p>
@@ -38,7 +38,7 @@
 	</div>
 </div>
 
-<div class="backgroudcolor-offset">
+<div class="backgroudcolor-offset third-color">
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-12 hulp-bij-mantelzorg">
