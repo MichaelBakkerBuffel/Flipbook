@@ -21,9 +21,17 @@ Route::get('/voeding', [
     'uses' => 'ContentController@index',
 ]);
 
+Route::get('/valpreventie', [
+    'uses' => 'ContentController@index',
+]);
+
+Route::get('/mantelcheck', [
+    'uses' => 'ContentController@index',
+]);
+
 // Back-end
 Route::resource('crud', 'CRUDController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('home');
