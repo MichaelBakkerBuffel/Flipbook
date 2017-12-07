@@ -11,12 +11,16 @@
 |
 */
 
+Route::get('/', function () {
+    return view('blog.index');
+});
+
 Route::get('/voeding', [
     'uses' => 'ContentController@index',
     ]);
 
 Route::get('/home', function () {
-    return view('blog.show');
+    return view('blog.index');
 });
 
 Route::resource('crud', 'CRUDController');
