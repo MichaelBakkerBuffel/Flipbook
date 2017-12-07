@@ -11,14 +11,17 @@
 |
 */
 
+
+// Front-end
 Route::get('/', function () {
     return view('blog.index');
 });
 
 Route::get('/voeding', [
     'uses' => 'ContentController@index',
-    ]);
+]);
 
+// Back-end
 Route::resource('crud', 'CRUDController');
 
 Auth::routes();

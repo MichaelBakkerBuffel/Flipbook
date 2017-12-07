@@ -10,11 +10,17 @@ html body .third-color{
     background-color: #1eb1ee;
 }
 
+/* ============= Header =============*/
+html body .navbar-default .navbar-brand,
+html body .navbar-default .navbar-nav>li>a{
+    color: #fff;
+}
+
 /* ============= bodyblocks =============*/
 
 .bodyblock-offset{
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -10vh;
 }
 
 button{
@@ -47,4 +53,9 @@ button{
 /* ============= Tips =============*/
 .tips{
     text-align: left;
+}
+
+/* ============= Footer =============*/
+footer{
+    color: #fff;
 }
