@@ -39,9 +39,16 @@ class ContentController extends BackendController
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+	        'title' => 'required',
+	        'slug' => 'required|unique:posts',
+	        'body' => 'required',
+            'category_id' => 'required'
+        ]);
+
         $request->user()->posts()->create($request->all());
 
-        return redirect('/overview')->with('message', 'Your post was created successfully!');
+        return redirect('/overview')->with('message', 'Artikel is aangemaakt!');
     }
 
     /**

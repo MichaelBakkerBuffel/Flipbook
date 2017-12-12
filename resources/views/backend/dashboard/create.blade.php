@@ -1,22 +1,20 @@
 @extends('layouts.backend.main')
 
-@section('title', 'MyBlog | Add new post')
-
 @section('content')
 
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Blog
-          <small>Add new post</small>
+          Artikel Toevoegen
+          <small>Nieuw artikel toevoegen</small>
         </h1>
         <ol class="breadcrumb">
           <li>
-              <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
+              <a href="{{ url('/dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
           </li>
-          <li><a href="{{ route('overview.index') }}">Blog</a></li>
-          <li class="active">Add new</li>
+          <li><a href="{{ route('overview.index') }}">Artikelen</a></li>
+          <li class="active">Nieuw</li>
         </ol>
       </section>
 
@@ -57,6 +55,14 @@
 
                         @if($errors->has('body'))
                             <span class="help-block">{{ $errors->first('body') }}</span>
+                        @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
+                        {!! Form::label('category_id', 'Category') !!}
+                        {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category']) !!}
+
+                        @if($errors->has('category_id'))
+                            <span class="help-block">{{ $errors->first('category_id') }}</span>
                         @endif
                     </div>
 

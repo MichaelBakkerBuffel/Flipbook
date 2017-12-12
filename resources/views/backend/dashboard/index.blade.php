@@ -11,7 +11,7 @@
         </h1>
         <ol class="breadcrumb">
           <li>
-              <a href="{{ url('/home') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
+              <a href="{{ url('/dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
           </li>
           <li><a href="{{ route('overview.index') }}">Artikelen</a></li>
           <li class="active">Alle artikelen</li>
@@ -65,8 +65,8 @@
                                         </td>
                                         <td>{{ $post->title }}</td>
                                         <td>{{ $post->author->name }}</td>
-                                        <td>
-                                        </td>
+                                        <td>{{ $post->category->title }}</td>
+                                        <td>{{ $post->created_at }}</td>
                                     </tr>
 
                                 @endforeach
