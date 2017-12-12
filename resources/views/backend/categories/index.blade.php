@@ -36,7 +36,7 @@
                         </div>
                     @endif
 
-                    @if (! $posts->count())
+                    @if (! $categories->count())
                         <div class="alert alert-danger">
                             <strong>No record found</strong>
                         </div>
@@ -45,28 +45,24 @@
                             <thead>
                                 <tr>
                                     <td width="80">Action</td>
-                                    <td>Title</td>
-                                    <td width="120">Author</td>
-                                    <td width="150">Category</td>
-                                    <td width="170">Date</td>
+                                    <td>Naam Categorie</td>
+                                    <td width="120">Post Count</td>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($posts as $post)
+                                @foreach($categories as $category)
 
                                     <tr>
                                         <td>
-                                            <a href="{{ route('overview.edit', $post->id) }}" class="btn btn-xs btn-default">
+                                            <a href="{{ route('categories.edit', $categorie->id) }}" class="btn btn-xs btn-default">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a href="{{ route('overview.destroy', $post->id) }}" class="btn btn-xs btn-danger">
+                                            <a href="{{ route('categories.destroy', $categorie->id) }}" class="btn btn-xs btn-danger">
                                                 <i class="fa fa-times"></i>
                                             </a>
                                         </td>
-                                        <td>{{ $post->title }}</td>
-                                        <td>{{ $post->author->name }}</td>
-                                        <td>{{ $post->category->title }}</td>
-                                        <td>{{ $post->created_at }}</td>
+                                        <td>{{ $category->title }}</td>
+                                        <td>{{ $category->categories->count() }}</td>
                                     </tr>
 
                                 @endforeach
@@ -77,7 +73,7 @@
                 <!-- /.box-body -->
                 <div class="box-footer clearfix">
                     <div class="pull-left">
-                        {{ $posts->render() }}
+                        {{ $categories->appends( Request::query() )->render() }}
                     </div>
                     <div class="pull-right">
                         <small>{{ $categoriesCount }} {{ str_plural('Item', $categoriesCount) }}</small>

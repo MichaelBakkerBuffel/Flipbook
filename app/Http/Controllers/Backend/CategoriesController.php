@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
+use App\Post;
 
 class CategoriesController extends BackendController
 {
@@ -17,7 +18,8 @@ class CategoriesController extends BackendController
     {
         $categories = Category::orderBy('title')->paginate($this->limit);
         $categoriesCount = Category::count();
-        return view("categories.index", compact('çategories', 'çategoriesCount'));
+        
+        return view("backend.categories.index", compact('çategories', 'çategoriesCount'));
     }
 
     /**
