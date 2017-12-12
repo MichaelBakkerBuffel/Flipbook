@@ -16,6 +16,11 @@ html body .navbar-default .navbar-nav>li>a{
     color: #fff;
 }
 
+html body .navbar-default .navbar-nav>li>a:hover{
+    background-color: #e7e7e7;
+    color: #555;
+}
+
 /* ============= bodyblocks =============*/
 
 .bodyblock-offset{
@@ -29,6 +34,11 @@ button{
     background-color: #f59331;
     border-radius: 5px;
     border: none;
+}
+
+button:hover{
+    background-color: #e7e7e7;
+    color: #555;
 }
 
 .bodyblock p{
