@@ -29,8 +29,8 @@
                     </span>
                   </a>
                   <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Alle artikelen</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Add New</a></li>
+                    <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-circle-o"></i> Alle artikelen</a></li>
+                    <li><a href="{{ route('dashboard.create') }}"><i class="fa fa-circle-o"></i> Add New</a></li>
                   </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-folder"></i> <span>Categorieen</span></a></li>

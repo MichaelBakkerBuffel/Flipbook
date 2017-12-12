@@ -29,9 +29,11 @@ Route::get('/mantelcheck', [
     'uses' => 'ContentController@index',
 ]);
 
-// Back-end
+// CRUD Controllers
 Route::resource('crud', 'CRUDController');
-
+// Login / Logout / Forgot register (Authentication)
 Auth::routes();
-
-Route::get('/dashboard', 'Backend\HomeController@index');
+// Dashboard Controller
+Route::get('/dashboard', 'Backend\HomeController@index');   \
+// Backend CRUD
+Route::resource('/backend/dashboard', 'Backend\ContentController');
