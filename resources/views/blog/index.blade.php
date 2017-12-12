@@ -4,8 +4,8 @@
 
 <div class="jumbotron bodyblock-offset">
   <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
+    <h1>Welkom!</h1>      
+    <p>Doe de mantelcheck!</p>
   </div>
 </div>
 

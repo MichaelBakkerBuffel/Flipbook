@@ -28,9 +28,9 @@
                         <div class="collapse navbar-collapse" id="the-navbar-collapse">
                             <ul class="nav navbar-nav navbar-right">
                                 <li {{{ (Request::is('/') ? 'class=active' : '') }}} ><a href="{{ url('/') }}">Home</a></li>
-                                <li {{{ (Request::is('/voeding') ? 'class=active' : '') }}} ><a href="{{ url('/voeding') }}">Voeding</a></li>
-                                <li {{{ (Request::is('/valpreventie') ? 'class=active' : '') }}} ><a href="{{ url('/valpreventie') }}">Valpreventie</a></li>
-                                <li {{{ (Request::is('/mantelcheck') ? 'class=active' : '') }}} ><a href="{{ url('/mantelcheck') }}">Mantelcheck</a></li>
+                                <li {{{ (Request::is('voeding') ? 'class=active' : '') }}} ><a href="{{ url('/voeding') }}">Voeding</a></li>
+                                <li {{{ (Request::is('valpreventie') ? 'class=active' : '') }}} ><a href="{{ url('/valpreventie') }}">Valpreventie</a></li>
+                                <li {{{ (Request::is('mantelcheck') ? 'class=active' : '') }}} ><a href="{{ url('/mantelcheck') }}">Mantelcheck</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container -->

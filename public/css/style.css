@@ -21,11 +21,30 @@ html body .navbar-default .navbar-nav>li>a:hover{
     color: #555;
 }
 
+.navbar-fixed-top{
+    border: none;
+}
+
 /* ============= bodyblocks =============*/
+
+.jumbotron{
+    background-image: url("../img/Jumbotron_Image_2.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+    height: 400px;
+}
+
+.jumbotron h1, .jumbotron p{
+    color: white;
+    text-shadow: -2px 2px #555;
+    position: relative;
+    top: 50px;
+}
 
 .bodyblock-offset{
     position: relative;
-    margin-bottom: -10vh;
+    margin-bottom: -5vh;
 }
 
 button{
