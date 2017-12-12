@@ -36,4 +36,10 @@ Auth::routes();
 // Dashboard Controller
 Route::get('/dashboard', 'Backend\HomeController@index');   \
 // Backend CRUD
-Route::resource('/backend/dashboard', 'Backend\ContentController');
+Route::resource('/overview', 'Backend\ContentController');
+
+
+
+
+
+

@@ -23,7 +23,7 @@
                                                         <p class="lead text-muted">Hallo {{ Auth::user()->name }}</p>
 
                                                         <h4>Start hier</h4>
-                                                        <p><a href="{{ route('overview.create') }}" class="btn btn-primary">Schrijf een artikel</a> </p>
+                                                        <p><a href="{{ route('dashboard.create') }}" class="btn btn-primary">Schrijf een artikel</a> </p>
                                             </div>
                                             <!-- /.box-body -->
                                         </div>

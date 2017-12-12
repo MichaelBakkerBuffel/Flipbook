@@ -3,9 +3,12 @@
 namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Post;
 
 class ContentController extends BackendController
 {
+    protected $limit = 5;
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +16,9 @@ class ContentController extends BackendController
      */
     public function index()
     {
-        return view("backend.dashboard.index");
+        $posts     = Post::with('category', 'author')->latest()->paginate($this->limit);
+        $postCount = Post::count();
+        return view("backend.dashboard.index", compact('posts', 'postCount'));
     }
 
     /**
@@ -21,9 +26,9 @@ class ContentController extends BackendController
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Post $post)
     {
-
+         return view('backend.dashboard.create', compact('post'));
     }
 
     /**
@@ -34,7 +39,9 @@ class ContentController extends BackendController
      */
     public function store(Request $request)
     {
-        //
+        $request->user()->posts()->create($request->all());
+
+        return redirect('/overview')->with('message', 'Your post was created successfully!');
     }
 
     /**
