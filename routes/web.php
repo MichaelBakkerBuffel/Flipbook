@@ -34,6 +34,13 @@ Route::resource('crud', 'CRUDController');
 // Login / Logout / Forgot register (Authentication)
 Auth::routes();
 // Dashboard Controller
-Route::get('/dashboard', 'Backend\HomeController@index');   \
-// Backend CRUD
-Route::resource('/backend/dashboard', 'Backend\ContentController');
+Route::get('/dashboard', 'Backend\HomeController@index');   
+// Backend CRUD articles
+Route::resource('/overview', 'Backend\ContentController');
+// Backend categories
+Route::resource('/categories', 'Backend\CategoriesController');
+
+
+
+
+

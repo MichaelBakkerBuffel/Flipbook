@@ -13,3 +13,5 @@ yarn-error.log
 
 README.md
 *.md
+resources/views/blog/index.blade.php
+resources/views/blog/index.blade.php
