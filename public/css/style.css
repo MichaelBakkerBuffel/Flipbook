@@ -79,6 +79,36 @@ button:hover{
     color: #fff;
 }
 
+/*============== Blogposts ==========*/
+.col-md-8 article{
+    border: 1px solid #e7e7e7;
+    /*border: 1px solid transparent;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
+    margin-bottom: 30px;
+}
+
+.col-md-8 article p{
+    padding: 0px 20px 0px 20px;
+}
+
+.article-heading{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    background-image: url("../img/Jumbotron_image_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.article-heading h2{
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px #555;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 /* ============= Tips =============*/
 .tips{
     text-align: left;
