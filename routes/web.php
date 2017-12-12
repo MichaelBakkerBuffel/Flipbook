@@ -35,9 +35,10 @@ Route::resource('crud', 'CRUDController');
 Auth::routes();
 // Dashboard Controller
 Route::get('/dashboard', 'Backend\HomeController@index');   \
-// Backend CRUD
+// Backend CRUD articles
 Route::resource('/overview', 'Backend\ContentController');
-
+// Backend categories
+Route::resource('/categories', 'Backend\CategoriesController');  
 
 
 

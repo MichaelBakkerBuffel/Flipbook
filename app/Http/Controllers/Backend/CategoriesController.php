@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\Post;
+use App\Http\Controllers\Controller;
+use App\Category;
 
-class ContentController extends BackendController
+class CategoriesController extends BackendController
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class ContentController extends BackendController
      */
     public function index()
     {
-        $posts     = Post::with('category', 'author')->latest()->paginate($this->limit);
-        $postCount = Post::count();
-        return view("backend.dashboard.index", compact('posts', 'postCount'));
+        $categories = Category::orderBy('title')->paginate($this->limit);
+        $categoriesCount = Category::count();
+        return view("categories.index", compact('çategories', 'çategoriesCount'));
     }
 
     /**
@@ -25,9 +25,9 @@ class ContentController extends BackendController
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Post $post)
+    public function create()
     {
-         return view('backend.dashboard.create', compact('post'));
+        //
     }
 
     /**
@@ -38,16 +38,7 @@ class ContentController extends BackendController
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-	        'title' => 'required',
-	        'slug' => 'required|unique:posts',
-	        'body' => 'required',
-            'category_id' => 'required'
-        ]);
-
-        $request->user()->posts()->create($request->all());
-
-        return redirect('/overview')->with('message', 'Artikel is aangemaakt!');
+        //
     }
 
     /**
