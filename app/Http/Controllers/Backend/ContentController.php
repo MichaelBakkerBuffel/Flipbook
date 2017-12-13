@@ -82,7 +82,22 @@ class ContentController extends BackendController
      */
     public function update(Request $request, $id)
     {
-        //
+            $this->validate($request, [
+	        'title' => 'required',
+	        'slug' => 'required|unique:posts',
+	        'body' => 'required',
+            'category_id' => 'required'
+        ]);
+
+        $post = Post::findOrFail($id);
+        $post->title = $request->get('title');
+        $post->slug = $request->get('slug');
+        $post->excerpt = $request->get('excerpt');
+        $post->body = $request->get('body');
+       // $data = $this->handleRequest($request);
+        $post->save();
+
+        return redirect('/overview')->with('message', 'Artikel is geupdate');
     }
 
     /**

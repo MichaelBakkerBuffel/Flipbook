@@ -7,14 +7,14 @@
       <section class="content-header">
         <h1>
           Artikel Aanpassen
-          <small>Nieuw artikel toevoegen</small>
+          <small>Bestaande artikel aanpassen</small>
         </h1>
         <ol class="breadcrumb">
           <li>
               <a href="{{ url('/dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
           </li>
           <li><a href="{{ route('overview.index') }}">Artikelen</a></li>
-          <li class="active">Nieuw</li>
+          <li class="active">Aanpassen</li>
         </ol>
       </section>
 
@@ -25,8 +25,9 @@
               <div class="box">
                 <div class="box-body ">
                     {!! Form::model($post, [
-                        'method' => 'POST',
-                        'route' => 'overview.store'
+                        'method' => 'PUT',
+                        'route' => ['overview.update', $post->id],
+                        'id' => 'post-form'
                     ]) !!}
 
                     <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
@@ -69,7 +70,7 @@
 
                     <hr>
 
-                    {!! Form::submit('Create new post', ['class' => 'btn btn-primary']) !!}
+                    {!! Form::submit('Updaten', ['class' => 'btn btn-primary']) !!}
 
                     {!! Form::close() !!}
                 </div>
