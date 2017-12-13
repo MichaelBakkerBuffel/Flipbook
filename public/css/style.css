@@ -91,7 +91,7 @@ button:hover{
 .blog-author-forhumans{
     display: inline-block;
     padding: 0px 0px 10px 20px;
-    color: #aaa;
+    color: #888;
 }
 
 .blog-excerpt{
@@ -101,7 +101,6 @@ button:hover{
 
 .article-heading{
     padding: 60px 20px 20px;
-    margin-bottom: 20px;
     border-bottom: 1px solid #e7e7e7;
     background-image: url("../img/Jumbotron_image_1.jpg");
     background-size: cover;
@@ -135,7 +134,6 @@ button:hover{
 /*============== Blogpost single ==============*/
 .article-body-heading{
     padding: 200px 20px 20px;
-    margin-bottom: 20px;
     border-bottom: 1px solid #e7e7e7;
     background-image: url("../img/Jumbotron_image_1.jpg");
     background-size: cover;
@@ -144,6 +142,7 @@ button:hover{
 .blog-author-forhumans-wrapper{
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 20px;
+    padding-top: 20px;
     background: rgba(0, 0, 0, 0.02);
 }
 
