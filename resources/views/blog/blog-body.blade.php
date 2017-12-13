@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-8">
                         <article>
-                            <div class="article-heading">
+                            <div class="article-body-heading">
                                 <h2>{{ $post->title }}</h2>
                             </div>
                             <p class="blog-author-forhumans">{{ $post->author->name }}</p>

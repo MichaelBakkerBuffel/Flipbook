@@ -35,7 +35,8 @@ html body .navbar-default .navbar-nav>li>a:hover{
     height: 400px;
 }
 
-.jumbotron h1, .jumbotron p{
+.jumbotron h1, 
+.jumbotron p{
     color: white;
     text-shadow: -2px 2px #555;
     position: relative;
@@ -106,7 +107,16 @@ button:hover{
     background-size: cover;
 }
 
-.article-heading h2{
+.article-body-heading{
+    padding: 200px 20px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    background-image: url("../img/Jumbotron_image_1.jpg");
+    background-size: cover;
+}
+
+.article-heading h2,
+.article-body-heading h2{
     margin: 0;
     color: white;
     text-shadow: 2px 2px #555;
@@ -117,6 +127,17 @@ button:hover{
 
 .readmore{
     margin: 10px 20px 10px 20px;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    background-color: #f59331;
+    border-radius: 5px;
+    border: none;
+}
+
+.readmore:hover{
+    background-color: #e7e7e7;
+    color: #555;
 }
 
 /* ============= Tips =============*/
