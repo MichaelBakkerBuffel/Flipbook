@@ -9,9 +9,11 @@
                             <div class="article-body-heading">
                                 <h2>{{ $post->title }}</h2>
                             </div>
-                            <p class="blog-author-forhumans">{{ $post->author->name }}</p>
-                            <p class="blog-author-forhumans">/</p>
-                            <p class="blog-author-forhumans">{{ $post->created_at->diffForHumans() }}</p>
+                            <div class="blog-author-forhumans-wrapper">
+                                <p class="blog-author-forhumans">{{ $post->author->name }}</p>
+                                <p class="blog-author-forhumans">/</p>
+                                <p class="blog-author-forhumans">{{ $post->created_at->diffForHumans() }}</p>
+                            </div>
                             <p class="blog-excerpt">{{ $post->body }}</p>
                         </article>
                 </div>
