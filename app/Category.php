@@ -8,6 +8,8 @@ class Category extends Model
 {
     protected $fillable = ['title', 'slug'];
 
+    public $timestamps = false;
+
     public function posts()
     {
         return $this->hasMany(Post::class);

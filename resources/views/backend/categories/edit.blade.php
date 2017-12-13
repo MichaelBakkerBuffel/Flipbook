@@ -6,15 +6,15 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
-          Artikel Toevoegen
-          <small>Nieuw artikel toevoegen</small>
+          Artikel Aanpassen
+          <small>Bestaande artikel aanpassen</small>
         </h1>
         <ol class="breadcrumb">
           <li>
               <a href="{{ url('/dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
           </li>
-          <li><a href="{{ route('overview.index') }}">Artikelen</a></li>
-          <li class="active">Nieuw</li>
+          <li><a href="{{ route('categories.index') }}">Artikelen</a></li>
+          <li class="active">Aanpassen</li>
         </ol>
       </section>
 
@@ -24,9 +24,10 @@
             <div class="col-xs-12">
               <div class="box">
                 <div class="box-body ">
-                    {!! Form::model($post, [
-                        'method' => 'POST',
-                        'route' => 'overview.store'
+                    {!! Form::model($category, [
+                        'method' => 'PUT',
+                        'route' => ['categories.update', $category->id],
+                        'id' => 'category-form'
                     ]) !!}
 
                     <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
@@ -45,31 +46,9 @@
                             <span class="help-block">{{ $errors->first('slug') }}</span>
                         @endif
                     </div>
-                    <div class="form-group">
-                        {!! Form::label('excerpt') !!}
-                        {!! Form::textarea('excerpt', null, ['class' => 'form-control']) !!}
-                    </div>
-                    <div class="form-group {{ $errors->has('body') ? 'has-error' : '' }}">
-                        {!! Form::label('body') !!}
-                        {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
-
-                        @if($errors->has('body'))
-                            <span class="help-block">{{ $errors->first('body') }}</span>
-                        @endif
-                    </div>
-                    <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
-                        {!! Form::label('category_id', 'Category') !!}
-                        {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class' => 'form-control', 'placeholder' => 'Choose category']) !!}
-
-                        @if($errors->has('category_id'))
-                            <span class="help-block">{{ $errors->first('category_id') }}</span>
-                        @endif
-                    </div>
-
-
                     <hr>
 
-                    {!! Form::submit('Opslaan', ['class' => 'btn btn-primary']) !!}
+                    {!! Form::submit('Updaten', ['class' => 'btn btn-primary']) !!}
 
                     {!! Form::close() !!}
                 </div>
