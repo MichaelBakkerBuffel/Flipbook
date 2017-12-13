@@ -29,6 +29,10 @@ Route::get('/mantelcheck', [
     'uses' => 'ContentController@index',
 ]);
 
+Route::get('/post/{id}', [
+    'uses' => 'ContentController@single',
+]);
+
 // CRUD Controllers
 Route::resource('crud', 'CRUDController');
 // Login / Logout / Forgot register (Authentication)

@@ -14,4 +14,12 @@ class ContentController extends Controller
         $posts = Post::with('author')->orderBy('created_at', 'desc')->paginate(3);
         return view("blog.show", compact('posts'));
     }
+
+    public function single($id)
+    {
+        // get single post
+        $post = Post::findOrFail($id);
+
+        return view("blog.blog-body", compact('post'));
+    }
 }

@@ -125,6 +125,10 @@ button:hover{
 }
 
 /* ============= Pagination ============= */
+.pagination {
+    position: relative;
+    left: 310px;
+}
 .pagination > li > a,
 .pagination > li > span {
     color: #555;

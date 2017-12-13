@@ -3,7 +3,7 @@
     {{--  Search bar --}}
     <div class="search-widget">
         <div class="input-group">
-            <input type="text" class="form-control input-lg" placeholder="Search for...">
+            <input type="text" class="form-control input-lg" placeholder="Zoeken...">
             <span class="input-group-btn">
                 <button class="btn btn-lg btn-default" type="button">
                     <i class="fa fa-search"></i>
@@ -15,7 +15,7 @@
     {{-- Categorie --}}
     <div class="widget">
         <div class="widget-heading">
-            <h4>Categories</h4>
+            <h4>Categoriën</h4>
         </div>
         <div class="widget-body">
             <ul class="categories">
@@ -46,14 +46,14 @@
     {{-- Populair posts --}}
     <div class="widget">
         <div class="widget-heading">
-            <h4>Popular Posts</h4>
+            <h4>Populaire Posts</h4>
         </div>
         <div class="widget-body">
             <ul class="popular-posts">
                 <li>
                     <div class="post-image">
                         <a href="#">
-                            <img src="img/Post_Image_5_thumb.jpg" />
+                            <img src="{{ url('/') }}/img/Post_Image_5_thumb.jpg" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -66,7 +66,7 @@
                 <li>
                     <div class="post-image">
                         <a href="#">
-                            <img src="img/Post_Image_4_thumb.jpg" />
+                            <img src="{{ url('/') }}/img/Post_Image_4_thumb.jpg" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -79,7 +79,7 @@
                 <li>
                     <div class="post-image">
                         <a href="#">
-                            <img src="img/Post_Image_3_thumb.jpg" />
+                            <img src="{{ url('/') }}/img/Post_Image_3_thumb.jpg" />
                         </a>
                     </div>
                     <div class="post-body">
