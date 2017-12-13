@@ -144,6 +144,7 @@ button:hover{
 .blog-author-forhumans-wrapper{
     border-bottom: 1px solid #e7e7e7;
     margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.02);
 }
 
 /* ============= Tips =============*/
