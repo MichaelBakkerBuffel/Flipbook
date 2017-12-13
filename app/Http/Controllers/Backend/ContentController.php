@@ -84,7 +84,7 @@ class ContentController extends BackendController
     {
             $this->validate($request, [
 	        'title' => 'required',
-	        'slug' => 'required|unique:posts',
+	        'slug' => 'required',
 	        'body' => 'required',
             'category_id' => 'required'
         ]);
