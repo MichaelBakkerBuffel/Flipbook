@@ -94,6 +94,7 @@ class ContentController extends BackendController
         $post->slug = $request->get('slug');
         $post->excerpt = $request->get('excerpt');
         $post->body = $request->get('body');
+        $post->category_id = $request->get('category_id');
        // $data = $this->handleRequest($request);
         $post->save();
 
