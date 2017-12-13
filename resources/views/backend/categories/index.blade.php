@@ -46,7 +46,7 @@
                                 <tr>
                                     <td width="80">Action</td>
                                     <td>Naam Categorie</td>
-                                    <td width="120">Post Count</td>
+                                    <td width="120">Aantal artikelen</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -54,15 +54,17 @@
 
                                     <tr>
                                         <td>
-                                            <a href="{{ route('categories.edit', $categorie->id) }}" class="btn btn-xs btn-default">
+                                            {!! Form::open(['method' => 'DELETE', 'route' => ['categories.destroy', $category->id], 'onsubmit' => 'return confirm("Klik op OK om de categorie te verwijderen!")']) !!}
+                                            <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-xs btn-default">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a href="{{ route('categories.destroy', $categorie->id) }}" class="btn btn-xs btn-danger">
+                                            <button type="submit" class="btn btn-xs btn-danger">
                                                 <i class="fa fa-times"></i>
-                                            </a>
+                                            </button>
+                                            {!! Form::close() !!}
                                         </td>
                                         <td>{{ $category->title }}</td>
-                                        <td>{{ $category->categories->count() }}</td>
+                                        <td>{{ $category->posts->count() }}</td>
                                     </tr>
 
                                 @endforeach
