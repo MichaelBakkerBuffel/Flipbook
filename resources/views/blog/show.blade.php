@@ -10,9 +10,11 @@
                             <div class="article-heading">
                                 <h2>{{ $post->title }}</h2>
                             </div>
-                            <p>{{ $post->excerpt }}</p>
-                            <p>{{ $post->author->name }}</p>
-                            <p>{{ $post->created_at->diffForHumans() }}</p>
+                            <p class="blog-author-forhumans">{{ $post->author->name }}</p>
+                            <p class="blog-author-forhumans">/</p>
+                            <p class="blog-author-forhumans">{{ $post->created_at->diffForHumans() }}</p>
+                            <p class="blog-excerpt">{{ $post->excerpt }}</p>
+                            <button class="readmore">Lees meer</button>
                         </article>
                     @endforeach
 
