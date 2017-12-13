@@ -12,6 +12,6 @@ class ContentController extends Controller
     {
         // get all posts + desc ordering and show 3 posts
         $posts = Post::with('author')->orderBy('created_at', 'desc')->paginate(3);
-        return view("show", compact('posts'));
+        return view("blog.show", compact('posts'));
     }
 }
