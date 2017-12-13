@@ -109,6 +109,8 @@ class ContentController extends BackendController
      */
     public function destroy($id)
     {
-        //
+        Post::findOrFail($id)->delete();
+
+        return redirect('/overview')->with('message', 'Artikel is verwijderd');
     }
 }

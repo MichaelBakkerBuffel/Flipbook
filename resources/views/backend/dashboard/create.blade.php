@@ -69,7 +69,7 @@
 
                     <hr>
 
-                    {!! Form::submit('Create new post', ['class' => 'btn btn-primary']) !!}
+                    {!! Form::submit('Artikel Opslaan', ['class' => 'btn btn-primary']) !!}
 
                     {!! Form::close() !!}
                 </div>

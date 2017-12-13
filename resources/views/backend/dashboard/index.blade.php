@@ -56,12 +56,14 @@
 
                                     <tr>
                                         <td>
+                                            {!! Form::open(['method' => 'DELETE', 'route' => ['overview.destroy', $post->id], 'onsubmit' => 'return confirm("Klik op OK om het artikel te verwijderen!")']) !!}
                                             <a href="{{ route('overview.edit', $post->id) }}" class="btn btn-xs btn-default">
                                                 <i class="fa fa-edit"></i>
                                             </a>
-                                            <a href="{{ route('overview.destroy', $post->id) }}" class="btn btn-xs btn-danger">
+                                            <button type="submit" class="btn btn-xs btn-danger">
                                                 <i class="fa fa-times"></i>
-                                            </a>
+                                            </button>
+                                            {!! Form::close() !!}
                                         </td>
                                         <td>{{ $post->title }}</td>
                                         <td>{{ $post->author->name }}</td>
