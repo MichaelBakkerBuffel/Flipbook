@@ -38,7 +38,7 @@
 
                     @if (! $posts->count())
                         <div class="alert alert-danger">
-                            <strong>No record found</strong>
+                            <strong>Geen artikelen gevonden</strong>
                         </div>
                     @else
                         <table class="table table-bordered">

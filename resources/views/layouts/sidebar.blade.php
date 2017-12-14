@@ -17,30 +17,16 @@
     {{-- Categorie --}}
     <div class="widget">
         <div class="widget-heading">
-            <h4>Categoriën</h4>
+            <h4>Categorieën</h4>
         </div>
         <div class="widget-body">
             <ul class="categories">
+                @foreach ($categories as $category)
                 <li>
-                    <a href="#"><i class="fa fa-angle-right"></i> Web Development</a>
-                    <span class="badge pull-right">10</span>
+                    <a href="{{ route('category', $category->id) }}"><i class="fa fa-angle-right"></i> {{ $category->title }} </a>
+                    <span class="badge pull-right"> {{ $category->posts->count() }} </span>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-angle-right"></i> Web Design</a>
-                    <span class="badge pull-right">10</span>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-angle-right"></i> General</a>
-                    <span class="badge pull-right">10</span>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-angle-right"></i> DIY</a>
-                    <span class="badge pull-right">10</span>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-angle-right"></i> Facebook Development</a>
-                    <span class="badge pull-right">10</span>
-                </li>
+                @endforeach
             </ul>
         </div>
     </div>

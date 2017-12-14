@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('blog.index');
 });
 
+Route::get('/category/{category}', [
+    'uses' => 'ContentController@category',
+    'as' => 'category',
+]);
+
 Route::get('/voeding', [
     'uses' => 'ContentController@index',
     'as' => 'blog',
