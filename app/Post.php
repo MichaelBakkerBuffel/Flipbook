@@ -19,4 +19,15 @@ class Post extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function scopeFilter($query, $term)
+    {
+        // check if any term entered
+        if ($term)
+        {
+            $query->where(function($q) use ($term) {
+                $q->orWhere('title', 'LIKE', "%{$term}%");
+            });
+        }
+    }
 }

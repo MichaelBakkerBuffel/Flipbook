@@ -10,15 +10,15 @@ class ContentController extends Controller
 {
     public function index()
     {
+        \DB::enableQueryLog(); 
         // get all posts + desc ordering and show 3 posts
-        $posts = Post::with('author')->orderBy('created_at', 'desc')->paginate(3);
+        $posts = Post::with('author')->filter(request('term'))->orderBy('created_at', 'desc')->paginate(3);
 
         // Check for search (checks if title is like the entered term)
-        if ($term = request('term')) {
-            $posts->where('title', 'LIKE', "{$term}");
-        }
 
-        return view("blog.show", compact('posts'));
+
+        return view("blog.show", compact('posts'))->render();
+        dd(\DB::getQueryLog());
 
     }
 
