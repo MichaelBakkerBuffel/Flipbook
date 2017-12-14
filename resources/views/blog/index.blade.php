@@ -10,11 +10,11 @@
 </div>
 
 <div class="container text-center">
-    <div class="row">
+    <div class="row flex">
         <div class="col-md-4 bodyblock">
             <div class="bodyblock-padding second-color">
                 <h3>Voeding</h3>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                <div class="img-container"><img src="img/voeding.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over voeding?</p>
                 <a href="category/1"><button>Meer informatie</button></a>
             </div>
@@ -22,7 +22,7 @@
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
                 <h3>Valpreventie</h3>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                <div class="img-container"><img src="img/valpreventie.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over valpreventie?</p>
                  <a href="category/2"><button>Meer informatie</button> </a>
             </div>
@@ -30,7 +30,7 @@
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
                 <h3>Mantelcheck</h3>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                <div class="img-container"><img src="img/mantelcheck.jpg" class="img-responsive" alt="Image"></div>
                 <p>Niet zeker of u mantelzorger bent?</p>
                 <a href="mantelcheck"><button>Doe de test</button></a>
             </div>
@@ -58,32 +58,33 @@
             <p>Hier komt tekst te staan</p>
         </div>
     </div>
-    <div class="row text-left">
+    <div class="row text-left tips">
         <div class="col-sm-4">
             <ul>
-                <li>Hier</li>
-                <li>Komen</li>
-                <li>Tips</li>
-                <li>Te</li>
-                <li>Staan</li>
+                <li>Zorg dat de oudere niet te gehaast opstaat en snel even van woonkamer naar keuken of omgekeerd loopt. Dit gehaast kan duizeligheid veroorzaken of ervoor zorgen dat de oudere struikelt</li>
+
+                <li>Drempels verhogen het risico op vallen. Een oudere kan er makkelijk achter blijven haken, struikelen en zo vallen. Drempels zouden daarom het best verwijderd kunnen worden. Is dit niet mogelijk zorg dan dat de drempels schuin afgewerkt zijn, dit verkleind de kans op struikelen</li>
+
+                <li>Zorg voor meubilair dat hoog is, zodat opstaan makkelijk gaat. Ook moet het meubilair leuningen bevatten voor steun</li>
             </ul>
         </div>
         <div class="col-sm-4">
             <ul>
-                <li>Hier</li>
-                <li>Komen</li>
-                <li>Tips</li>
-                <li>Te</li>
-                <li>Staan</li>
+                <li>Zorg dat woonkamer en keuken toegankelijk zijn en niet te vol staan. Hoe toegankelijker/ruimer de ruimtes, des te kleiner de kans op vallen</li>
+
+                <li>Zorg dat de vloeren schoon en droog zijn. Bakboter bijvoorbeeld zorgt dat de vloer glad wordt, wat weer valgevaar met zich meebrengt. Hetzelfde geldt voor als de vloer gedweild is</li>
+
+                <li>Zorg dat losse kabels niet over de vloer slingeren. Een oudere kan hier makkelijk in blijven haken en vallen. Losse kabels kunnen weggewerkt worden door bijvoorbeeld kabelgoten</li>
             </ul>
         </div>
         <div class="col-sm-4">
-            <ul>
-                <li>Hier</li>
-                <li>Komen</li>
-                <li>Tips</li>
-                <li>Te</li>
-                <li>Staan</li>
+            <ul>               
+                <li>Een bed zou de juiste hoogte moeten hebben, waardoor een oudere makkelijk eruit kan komen, maar ook makkelijk erin. Hulpmiddelencentra verkopen allerhande steunen en zelfs verstelbare bedden om zo opstaan en in bed gaan te vermakkelijken</li>
+
+                <li>Een nachtlampje is handig, om zo voldoende zicht te creëren</li>
+
+                <li>Pantoffels worden geadviseerd, omdat ze antislip bevatten en zo het risico op vallen verkleinen, MAAR: denk erom waar de pantoffels worden uitgetrokken. Als ze in het pad liggen kan iemand er over struikelen en vallen.</li>
+
             </ul>
         </div>
     </div>

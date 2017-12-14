@@ -61,15 +61,36 @@ button:hover{
     color: #555;
 }
 
+.bodyblock{
+    flex: 1;
+}
+
 .bodyblock p{
     margin: 20px;
 }
 
+.row.flex{
+    display: flex;
+}
+
 .bodyblock-padding{
+    height: 100%;
     background-color: #343434;
     color: white;
     margin: 0 20px;
     padding: 20px;
+}
+
+.img-container{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.bodyblock-padding img{
+    width: 100%;
+    height: auto;
 }
 
 /* ============= Hulp bij mantelzorg =============*/
@@ -149,6 +170,10 @@ button:hover{
 /* ============= Tips =============*/
 .tips{
     text-align: left;
+}
+
+.tips li{
+    padding-bottom: 10px;
 }
 
 /* ============= Pagination ============= */
