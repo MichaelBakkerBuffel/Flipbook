@@ -170,6 +170,57 @@ button:hover{
     border-color: #2a4264;
 }
 
+/* ============= Mantelcheck ============== */
+.mantelcheck-bodyblock{
+    height: 75vh;
+    color: #888;
+    text-align: center;
+    margin: 10px 0px 40px;
+    padding-top: 200px;
+    border: 3px solid #e7e7e7;
+    /*border: 1px solid transparent;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
+    background-color: rgba(0,0,0,0.02);
+}
+
+.mantelcheck-title{
+    border: 3px solid #e7e7e7;
+    /*border: 1px solid transparent;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
+    background-color: rgba(0,0,0,0.02);
+}
+.mantelcheck-title h4{
+    margin: 15px;
+    color: #888;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+.mantelcheck-bodyblock:hover{
+    text-shadow: -2px 2px #333;
+}
+
+.mantelcheck-yes:hover{
+    background-color: rgba(0,100,0,0.8);
+    color: #fff;
+}
+
+.mantelcheck-no:hover{
+    background-color: rgba(250,0,0,0.8);
+    color: #fff;
+}
+
+.flag{
+    float: right;
+    text-align: center;
+    background-color: #f59331;
+    color: #fff;
+    padding: 50px 0px 50px;
+    border: 3px solid #e7e7e7;
+    /*border: 1px solid transparent;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
+}
 /* ============= Footer =============*/
 footer{
     color: #fff;
