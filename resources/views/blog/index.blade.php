@@ -5,7 +5,7 @@
 <div class="jumbotron bodyblock-offset">
   <div class="container text-center">
     <h1>Welkom!</h1>
-    <p>Doe de mantelcheck!</p>
+    <p>Hier vindt u informatie over voeding en valpreventie voor mantelzorgers</p>
   </div>
 </div>
 
@@ -13,26 +13,26 @@
     <div class="row">
         <div class="col-md-4 bodyblock">
             <div class="bodyblock-padding second-color">
-                <h3>Kopje</h3>
+                <h3>Voeding</h3>
                 <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                <p>hier komt text</p>
-                <button>Dit is een knop</button>
+                <p>Bent u op zoek naar informatie over voeding?</p>
+                <a href="category/1"><button>Meer informatie</button></a>
             </div>
         </div>
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
-                <h3>Kopje</h3>
+                <h3>Valpreventie</h3>
                 <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                <p>hier komt text</p>
-                <button>Dit is een knop</button>
+                <p>Bent u op zoek naar informatie over valpreventie?</p>
+                 <a href="category/2"><button>Meer informatie</button> </a>
             </div>
         </div>
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
-                <h3>Kopje</h3>
+                <h3>Mantelcheck</h3>
                 <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                <p>hier komt text</p>
-                <button>Dit is een knop</button>
+                <p>Niet zeker of u mantelzorger bent?</p>
+                <a href="mantelcheck"><button>Doe de test</button></a>
             </div>
         </div>
     </div>
@@ -43,8 +43,8 @@
         <div class="row">
             <div class="col-sm-12 hulp-bij-mantelzorg">
                 <h1>Hulp bij mantelzorg</h1>
-                <p>Hier komt text te staan</p>
-                <button>Dit is een knop</button>
+                <p>Bij het geven van zorg komt veel bij kijken! In veel gevallen kunt u hulp krijgen of vergoedingen</p>
+                <button>Meer informatie</button>
             </div>
         </div>
     </div>
