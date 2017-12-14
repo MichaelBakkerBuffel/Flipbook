@@ -12,7 +12,14 @@ class ContentController extends Controller
     {
         // get all posts + desc ordering and show 3 posts
         $posts = Post::with('author')->orderBy('created_at', 'desc')->paginate(3);
+
+        // Check for search (checks if title is like the entered term)
+        if ($term = request('term')) {
+            $posts->where('title', 'LIKE', "{$term}");
+        }
+
         return view("blog.show", compact('posts'));
+
     }
 
     public function single($id)

@@ -5,6 +5,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
+                 @if (! $posts->count())
+                    <div class="alert alert-warning">
+                        <p>Geen resultaten</p>
+                    </div>
+                @else
+                @if ($term = request(''))
+                    <div class="alert alert-info">
+                        <p>Zoekresultaten<strong>{{ $term }}</strong></p>
+                    </div>
+                @endif
+
                     @foreach($posts as $post)
                         <article>
                             <div class="article-heading">
@@ -19,6 +30,8 @@
                             <a href="post/{{ $post->id }}" class="readmore">Lees meer</a>
                         </article>
                     @endforeach
+
+                    @endif
 
                     <!-- pagination -->
                     {{ $posts->links() }}

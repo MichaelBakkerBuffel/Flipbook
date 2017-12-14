@@ -19,15 +19,16 @@ Route::get('/', function () {
 
 Route::get('/voeding', [
     'uses' => 'ContentController@index',
+    'as' => 'blog',
 ]);
 
 Route::get('/valpreventie', [
     'uses' => 'ContentController@index',
 ]);
 
-Route::get('/mantelcheck', [
-    'uses' => 'ContentController@index',
-]);
+Route::get('/mantelcheck', function () {
+    return view('blog.mantelcheck');
+});
 
 Route::get('/post/{id}', [
     'uses' => 'ContentController@single',
