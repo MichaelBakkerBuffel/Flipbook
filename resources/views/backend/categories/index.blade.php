@@ -54,7 +54,10 @@
 
                                     <tr>
                                         <td>
-                                           {!! Form::open(['method' => 'DELETE', 'route' => ['categories.destroy', $category->id], 'onsubmit' => 'return confirm("Klik op OK om de categorie te verwijderen!")']) !!}
+                                            @if (! $category->posts->count())
+                                           {!! Form::open(['method' => 'DELETE', 'route' => ['categories.destroy',
+                                           $category->id], 'onsubmit' => 'return confirm("Klik op OK om de categorie te verwijderen!")']) !!}
+                                           @else
                                             <a href="{{ route('categories.edit', $category->id) }}" class="btn btn-xs btn-default">
                                                 <i class="fa fa-edit"></i>
                                             </a>
@@ -62,10 +65,12 @@
                                                 <i class="fa fa-times"></i>
                                             </button>
                                             {!! Form::close() !!}
+
                                         </td>
                                         <td>{{ $category->title }}</td>
                                         <td>{{ $category->posts->count() }}</td>
                                     </tr>
+                                     @endif
                                 @endforeach
                             </tbody>
                         </table>
