@@ -1,5 +1,5 @@
 
-{{--  Search bar --}} 
+{{--  Search bar --}}
 <aside class="right-sidebar">
     <div class="search-widget">
         <form action="{{ route('blog') }}">
@@ -13,7 +13,7 @@
                 </div>
         </form>
     </div>
-        
+
     {{-- Categorie --}}
     <div class="widget">
         <div class="widget-heading">

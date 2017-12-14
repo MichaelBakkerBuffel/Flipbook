@@ -34,9 +34,10 @@ class ContentController extends Controller
 
     public function single($id)
     {
+        $categories = Category::with('posts')->orderBy('title', 'asc')->get();
         // get single post
         $post = Post::findOrFail($id);
 
-        return view("blog.blog-body", compact('post'));
+        return view("blog.blog-body", compact('post', 'categories'));
     }
 }
