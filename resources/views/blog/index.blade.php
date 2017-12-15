@@ -55,7 +55,6 @@
     <div class="row">
         <div class="col-sm-12 ">
             <h1>Handige tips</h1>
-            <p>Hier komt tekst te staan</p>
         </div>
     </div>
     <div class="row text-left tips">
