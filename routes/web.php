@@ -35,7 +35,7 @@ Route::get('/mantelcheck', function () {
     return view('blog.mantelcheck');
 });
 
-Route::get('/post/{id}', [
+Route::get('/category/post/{id}', [
     'uses' => 'ContentController@single',
 ]);
 
