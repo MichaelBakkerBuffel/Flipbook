@@ -30,7 +30,7 @@
                   </a>
                   <ul class="treeview-menu">
                     <li><a href="{{ route('overview.index') }}"><i class="fa fa-circle-o"></i> Alle artikelen</a></li>
-                    <li><a href="{{ route('overview.create') }}"><i class="fa fa-circle-o"></i> Add New</a></li>
+                    <li><a href="{{ route('overview.create') }}"><i class="fa fa-circle-o"></i> Nieuw artikel</a></li>
                   </ul>
                 </li>
                 <li><a href="{{ route('categories.index') }}"><i class="fa fa-folder"></i> <span>Categorieen</span></a></li>

@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="{{ url('/') }}/backend/css/skins/_all-skins.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{ url('/') }}/../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!-- Editor Files -->
+  <link rel="stylesheet" href="{{ url('/') }}/backend/plugins/editor/simplemde.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,5 +44,8 @@
         <script src="{{ url('/') }}/backend/js/bootstrap.min.js"></script>
         <!-- AdminLTE App -->
         <script src="{{ url('/') }}/backend/js/app.min.js"></script>
+        <!-- Editor -->
+        <script src="{{ url('/') }}/backend/plugins/editor/simplemde.min.js"></script>
+        @yield('script')    
     </body>
     </html>
