@@ -204,106 +204,32 @@ button:hover{
 }
 
 /* ============= Mantelcheck ============== */
-.mantelcheck-bodyblock{
-    height: 75vh;
-    text-align: center;
-    margin: 10px 0px 30px;
-    padding-top: 200px;
-    border: 3px solid #e7e7e7;
-    color: #fff;
+
+.mantelcheck-yes{
+    float: left;
+    width: 50%;
+    margin-top: -20px;
+}
+
+.mantelcheck-yes-image{
+    width: 100%;
 }
 
 .mantelcheck-no{
-    background-image: url("../img/mantelcheck_no_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    right: 0px;
+    float: left;
+    margin-top: -20px;
 }
 
-.mantelcheck-yes{
-    background-image: url("../img/mantelcheck_yes_image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.mantelcheck-no h1{
-    color: red;
-    font-weight: bolder;
-    font-size: 2.5em;
+.mantelcheck-yes h1 p,
+.mantelcheck-no h1 p{
+    float: left;
 }
 
-.mantelcheck-yes h1{
-    color: green;
-    font-weight: bolder;
-    font-size: 2.5em;
+.mantelcheck-no-image{
+    width: 100%;
 }
-.mantelcheck-title{
-    border: 3px solid #e7e7e7;
-    /*border: 1px solid transparent;*/
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
-    background-color: rgba(0,0,0,0.02);
-}
-
-.mantelcheck-title h4{
-    margin: 15px;
-    color: #888;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-}
-
-.mantelcheck-question{
-    margin-top: 10px;
-    border: 3px solid #e7e7e7;
-    /*border: 1px solid transparent;*/
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
-    background-color: rgba(0,0,0,0.02);
-    text-align: center;
-}
-
-.mantelcheck-question p{
-    margin: 15px;
-}
-
-.mantelcheck-yes:hover{
-    background-image: url("../img/mantelcheck_yes_image_hover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mantelcheck-no:hover{
-    background-image: url("../img/mantelcheck_no_image_hover.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mantelcheck-progress{
-    border: 3px solid #e7e7e7;
-    /*border: 1px solid transparent;*/
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
-    height: 100%;
-    background: linear-gradient(90deg, #f59331 25%, rgba(0, 0, 0, 0.02) 25%);
-    margin-top: 10px;
-}
-.mantelcheck-progress h4{
-    margin: 5px;
-    color: #888;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-}
-
-/*.flag{
-    float: right;
-    text-align: center;
-    background-color: #f59331;
-    color: #fff;
-    padding: 50px 0px 50px;
-    border: 3px solid #e7e7e7;
-    /*border: 1px solid transparent;*/
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02);
-}
-
 /* ============= Footer =============*/
 footer{
     color: #fff;
