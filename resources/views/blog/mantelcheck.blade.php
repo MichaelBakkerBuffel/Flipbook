@@ -11,12 +11,12 @@
     		<div class="col-md-12 mantelcheck-progress">
     			<h4>1/4</h4>
     		</div>
-			<div class="col-md-6 mantelcheck-bodyblock mantelcheck-no">
-				<h1>Nee</h1>
+    		<div class="col-md-6 mantelcheck-bodyblock mantelcheck-yes">
+				<h1>Ja</h1>
 				<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
 			</div>
-			<div class="col-md-6 mantelcheck-bodyblock mantelcheck-yes">
-				<h1>Ja</h1>
+			<div class="col-md-6 mantelcheck-bodyblock mantelcheck-no">
+				<h1>Nee</h1>
 				<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
 			</div>
 		</div>
