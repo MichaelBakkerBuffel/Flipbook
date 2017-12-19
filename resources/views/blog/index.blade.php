@@ -13,7 +13,7 @@
     <div class="row flex">
         <div class="col-md-4 bodyblock">
             <div class="bodyblock-padding second-color">
-                <h3>Voeding</h3>
+                <h1>Voeding</h1>
                 <div class="img-container"><img src="img/voeding.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over voeding?</p>
                 <a href="category/1"><button>Meer informatie</button></a>
@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
-                <h3>Valpreventie</h3>
+                <h1>Valpreventie</h1>
                 <div class="img-container"><img src="img/valpreventie.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over valpreventie?</p>
                  <a href="category/2"><button>Meer informatie</button> </a>
@@ -29,7 +29,7 @@
         </div>
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
-                <h3>Mantelzorgtest</h3>
+                <h1>Mantelzorgtest</h1>
                 <div class="img-container"><img src="img/mantelcheck.jpg" class="img-responsive" alt="Image"></div>
                 <p>Niet zeker of u mantelzorger bent?</p>
                 <a href="mantelcheck"><button>Doe de test</button></a>
