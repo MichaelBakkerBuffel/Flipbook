@@ -29,7 +29,7 @@
         </div>
         <div class="col-md-4 bodyblock">
              <div class="bodyblock-padding second-color">
-                <h3>Mantelcheck</h3>
+                <h3>Mantelzorgtest</h3>
                 <div class="img-container"><img src="img/mantelcheck.jpg" class="img-responsive" alt="Image"></div>
                 <p>Niet zeker of u mantelzorger bent?</p>
                 <a href="mantelcheck"><button>Doe de test</button></a>

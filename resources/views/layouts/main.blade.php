@@ -30,7 +30,7 @@
                                 <li {{{ (Request::is('/') ? 'class=active' : '') }}} ><a href="{{ url('/') }}">Home</a></li>
                                 <li {{{ (Request::is('voeding') ? 'class=active' : '') }}} ><a href="{{ url('/category/1') }}">Voeding</a></li>
                                 <li {{{ (Request::is('valpreventie') ? 'class=active' : '') }}} ><a href="{{ url('/category/2') }}">Valpreventie</a></li>
-                                <li {{{ (Request::is('mantelcheck') ? 'class=active' : '') }}} ><a href="{{ url('/mantelcheck') }}">Mantelcheck</a></li>
+                                <li {{{ (Request::is('mantelcheck') ? 'class=active' : '') }}} ><a href="{{ url('/mantelcheck') }}">Mantelzorgtest</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container -->
