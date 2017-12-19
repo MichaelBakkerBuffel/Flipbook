@@ -16,6 +16,9 @@
 				<h2>Ja</h2>
 				<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
 			</div>
+			<div class="col-md-12 mantelcheck-progress">
+    			<h4>1/4</h4>
+    		</div>
 		</div>
 	</div>
 
