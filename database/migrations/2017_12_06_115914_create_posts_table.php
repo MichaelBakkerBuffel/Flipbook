@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('author_id')->unsigned();
+            $table->integer('author_id')->unsigned()->default('1');
             $table->foreign('author_id')->references('id')->on('users')->onDelete('restrict');
             $table->integer('user_id'); 
             $table->integer('category_id');
