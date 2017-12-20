@@ -89,8 +89,8 @@
 @section('script')
     <script type="text/javascript">
         $('ul.pagination').addClass('no-margin pagination-sm');
-
-        var simplemde = new SimpleMDE({ element: $("#excerpt")[0] });
-        var simplemde = new SimpleMDE({ element: $("#body")[0] });
     </script>
+        <script src="{{ URL::to('/js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
+        <script src="{{ URL::to('/backend/plugins/editor/editor-excerpt.js') }}"></script>
+        <script src="{{ URL::to('/backend/plugins/editor/editor-body.js') }}"></script>
 @endsection

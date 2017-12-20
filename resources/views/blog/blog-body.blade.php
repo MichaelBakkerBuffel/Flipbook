@@ -14,7 +14,7 @@
                                 <p class="blog-author-forhumans">/</p>
                                 <p class="blog-author-forhumans">{{ $post->created_at->diffForHumans() }}</p>
                             </div>
-                            <p class="blog-excerpt">{{ $post->body }}</p>
+                            <p class="blog-excerpt">{!!html_entity_decode($post->body) !!}</p>
                         </article>
                 </div>
 

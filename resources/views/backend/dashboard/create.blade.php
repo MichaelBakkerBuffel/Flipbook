@@ -88,21 +88,10 @@
 @section('script')
     <script type="text/javascript">
         $('ul.pagination').addClass('no-margin pagination-sm');
-
-        $('#title').on('blur', function() {
-        	var theTitle = this.value.toLowerCase().trim(),
-	    slugInput = $('#slug'),
-        theSlug = theTitle.replace(/&/g, '-and-')
-                           .replace(/[^a-z0-9-]+/g, '')
-                           .replace(/\-\-+/g, '-')
-                           .replace(/^-+|-+$/g, '');
-
-	    slugInput.val(theSlug);
-
-        });
-
-        var simplemde = new SimpleMDE({ element: $("#excerpt")[0] });
-        var simplemde = new SimpleMDE({ element: $("#body")[0] });
-
     </script>
+
+        <script src="{{ URL::to('/js/tinymce/js/tinymce/tinymce.min.js') }}"></script>
+        <script src="{{ URL::to('/backend/plugins/editor/editor-excerpt.js') }}"></script>
+        <script src="{{ URL::to('/backend/plugins/editor/editor-body.js') }}"></script>
+
 @endsection

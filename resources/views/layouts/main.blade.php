@@ -60,5 +60,10 @@
         </footer>
 
         <script src="{{ url('/') }}/js/bootstrap.min.js"></script>
+               <!-- jQuery 2.2.3 -->
+        <script src="http://flipbook.dev/public/backend/js/jquery-2.2.3.min.js"></script>
+
+
+
 </body>
 </html>
