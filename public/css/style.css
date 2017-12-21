@@ -215,6 +215,19 @@ article p {
     height: 10vh;
 }
 
+.bar{
+    position: relative;
+    top: 3vh;
+    left: 12.5%;
+    width: 75%;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #15c702 25%, #fff 25%);
+}
+
+.bar p{
+    text-align: center;
+}
+
 .mantelcheck-yes{
     float: left;
     width: 50%;
@@ -245,20 +258,20 @@ article p {
 
 .mantelcheck-no-text,
 .mantelcheck-yes-text{
-    margin-top: 200px;
+    margin-top: 225px;
     font-size: 1.2em;
 }
 
 .mantelcheck-no-text h1{
     font-size: 2em;
     font-weight: bolder;
-    color: red;
+    text-transform: uppercase;
 }
 
 .mantelcheck-yes-text h1{
     font-size: 2em;
     font-weight: bolder;
-    color: #1bff02;
+    text-transform: uppercase;
 }
 
 .row-fix{

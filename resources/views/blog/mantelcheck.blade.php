@@ -4,7 +4,9 @@
 
 	<div class="row row-fix">
 		<div class="progressbar">
-			<p>yes</p>
+			<div class="bar">
+				<p>25%</p>
+			</div>
 		</div>
 		<div class="mantelcheck-yes">
 			<div class="mantelcheck-yes-text">
