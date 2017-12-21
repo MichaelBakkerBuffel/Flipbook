@@ -209,30 +209,61 @@ article p {
 
 /* ============= Mantelcheck ============== */
 
+.progressbar{
+    background-color: #f59331;
+    margin-top: -20px;
+    height: 10vh;
+}
+
 .mantelcheck-yes{
     float: left;
     width: 50%;
-    margin-top: -20px;
+    height: 85vh;
+    background-image: url("../img/mantelcheck_yes_image.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
 }
 
-.mantelcheck-yes-image{
-    width: 100%;
+.mantelcheck-yes:hover{
+    background-image: url("../img/mantelcheck_yes_image_hover.jpg");
 }
 
 .mantelcheck-no{
-    position: relative;
-    right: 0px;
-    float: left;
-    margin-top: -20px;
+    float: right;
+    width: 50%;
+    height: 85vh;
+    background-image: url("../img/mantelcheck_no_image.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
 }
 
-.mantelcheck-yes h1 p,
-.mantelcheck-no h1 p{
-    float: left;
+.mantelcheck-no:hover{
+    background-image: url("../img/mantelcheck_no_image_hover.jpg");
 }
 
-.mantelcheck-no-image{
-    width: 100%;
+.mantelcheck-no-text,
+.mantelcheck-yes-text{
+    margin-top: 200px;
+    font-size: 1.2em;
+}
+
+.mantelcheck-no-text h1{
+    font-size: 2em;
+    font-weight: bolder;
+    color: red;
+}
+
+.mantelcheck-yes-text h1{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #1bff02;
+}
+
+.row-fix{
+  margin-right: 0px;
+  margin-left: 0px;
 }
 /* ============= Footer =============*/
 footer{
