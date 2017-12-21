@@ -1,4 +1,7 @@
 <?php
+use App\Category;
+use App\Subcategory;
+use Illuminate\Support\Facades\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +21,11 @@ Route::get('/', function () {
 });
 
 Route::get('/category/{category}', [
+    'uses' => 'ContentController@category',
+    'as' => 'category',
+]);
+
+Route::get('/videos/{category}', [
     'uses' => 'ContentController@category',
     'as' => 'category',
 ]);

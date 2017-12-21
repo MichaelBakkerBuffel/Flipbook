@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use\Http\Requests;
+use Illuminate\Support\Facades\Input;
 use App\Post;
 use App\Category;
+use App\Subcategory;
 
 class ContentController extends Controller
 {
@@ -20,14 +22,18 @@ class ContentController extends Controller
         return view("blog.show", compact('posts', 'categories'))->render();
     }
 
-        public function category($id)
+    public function category($id)
     {
+
         $categories = Category::with('posts')->orderBy('title', 'asc')->get();
 
         // get all posts + desc ordering and show 3 posts
         // filter: (checks if title is like the entered term)
         $posts = Post::with('author')->where('category_id', $id)->filter(request('term'))->orderBy('created_at', 'desc')->paginate(3);
 
+    //   $subcategories = new Subcategory (
+     //       [ 'name'=> Input::get('subcategory') ]
+     //   );
         return view("blog.show", compact('posts', 'categories'));
 
     }

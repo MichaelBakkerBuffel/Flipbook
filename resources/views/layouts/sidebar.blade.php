@@ -25,9 +25,29 @@
                 <li>
                     <a href="{{ route('category', $category->id) }}"><i class="fa fa-angle-right"></i> {{ $category->title }} </a>
                     <span class="badge pull-right"> {{ $category->posts->count() }} </span>
-                </li>
+                     </li>
+                     <li>
+                       <a href="{{ $category->id }}?term=video">Video / Filmpjes</a>
+                     </li>
                 @endforeach
             </ul>
+
+  <script>
+$('.categories').on('change', function(e) {
+
+    var category_id = e.target.value;
+
+        $.get('/subcategory?category_id=' + category_id, function(data) {
+        $('#subcategory').empty();
+        $.each(data, function(index, subcatObj) {
+
+            $('#subcategory').append('<option value"'+subcatObj.id+'">'+subcatObj.name+'</option>');
+        });
+    });
+});
+
+</script>
+
         </div>
     </div>
 
