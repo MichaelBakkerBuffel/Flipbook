@@ -31,21 +31,21 @@ body{
 /* ============= bodyblocks =============*/
 
 .jumbotron{
-    background-image: url("../img/Jumbotron_Image_2.png");
+    background-image: url("../img/Jumbotron_Image_2.jpg");
     background-size: cover;
     background-position: center;
     margin-top: -20px;
     height: 400px;
 }
 .jumbotron h1{
-    color: white;
-    text-shadow: -2px 2px #555;
+    color: #fff;
     position: relative;
     top: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 .jumbotron p{
-    color: white;
-    text-shadow: -2px 2px #555;
+    color: #fff;
     position: relative;
     top: 50px;
     font-size: 25px;
@@ -212,12 +212,13 @@ article p {
 .progressbar{
     background-color: #f59331;
     margin-top: -20px;
-    height: 10vh;
+    min-height: 70px;
 }
 
 .bar{
-    position: relative;
-    top: 3vh;
+    position: absolute;
+    height: 30px;
+    top: 70px;
     left: 12.5%;
     width: 75%;
     border-radius: 15px;
@@ -226,11 +227,12 @@ article p {
 
 .bar p{
     text-align: center;
+    color: #333;
 }
 
 .triangle-down{
     position: relative;
-    top: 4.5vh;
+    top: 70px;
     margin: auto;
     width: 0;
     height: 0;
@@ -267,9 +269,17 @@ article p {
     background-image: url("../img/mantelcheck_no_image_hover.jpg");
 }
 
+.mantelcheck-yes-opacity{
+    position: relative;
+    top: -100px;
+    background-color: black;
+    opacity: 0.9;
+    height: 85vh;
+}
+
 .mantelcheck-no-text,
 .mantelcheck-yes-text{
-    margin-top: 225px;
+    padding-top: 225px;
     font-size: 1.2em;
 }
 

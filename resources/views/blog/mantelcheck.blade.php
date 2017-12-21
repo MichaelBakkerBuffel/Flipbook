@@ -9,18 +9,22 @@
 			</div>
 			<div class="triangle-down"></div>
 		</div>
-		<div class="mantelcheck-yes">
-			<div class="mantelcheck-yes-text">
-				<h1>Ja</h1>
-				<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
+		<a href="#">
+			<div class="mantelcheck-yes">
+				<div class="mantelcheck-yes-text">
+					<h1>Ja</h1>
+					<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
+				</div>
 			</div>
-		</div>
-		<div class="mantelcheck-no">
-			<div class="mantelcheck-no-text">
-				<h1>Nee</h1>
-				<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
+		</a>
+		<a href="#">
+			<div class="mantelcheck-no">
+				<div class="mantelcheck-no-text">
+					<h1>Nee</h1>
+					<p>Zorgt u voor iemand die extra hulp nodig heeft?</p>
+				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 
 @endsection
