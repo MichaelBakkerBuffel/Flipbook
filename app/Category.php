@@ -19,8 +19,4 @@ class Category extends Model
     {
         return 'slug';
     }
-
-    public function subcategories() {
-        return $this->hasMany('Subcategory');
-    }
 }

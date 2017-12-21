@@ -25,11 +25,6 @@ Route::get('/category/{category}', [
     'as' => 'category',
 ]);
 
-Route::get('/videos/{category}', [
-    'uses' => 'ContentController@category',
-    'as' => 'category',
-]);
-
 Route::get('/voeding', [
     'uses' => 'ContentController@index',
     'as' => 'blog',

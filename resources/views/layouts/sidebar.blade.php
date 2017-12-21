@@ -32,22 +32,6 @@
                 @endforeach
             </ul>
 
-  <script>
-$('.categories').on('change', function(e) {
-
-    var category_id = e.target.value;
-
-        $.get('/subcategory?category_id=' + category_id, function(data) {
-        $('#subcategory').empty();
-        $.each(data, function(index, subcatObj) {
-
-            $('#subcategory').append('<option value"'+subcatObj.id+'">'+subcatObj.name+'</option>');
-        });
-    });
-});
-
-</script>
-
         </div>
     </div>
 
