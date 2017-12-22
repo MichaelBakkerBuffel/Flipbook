@@ -303,13 +303,13 @@ article p {
 /* ============= Breadcrumb =============*/
 .breadcrumb{
     border: 1px solid #e7e7e7;
-    background: rgba(0, 0, 0, 0.02);
+    background: #fff;
     border-radius: 0px;
-    color: #888;
+    color: #333;
 }
 
 .breadcrumb a{
-    color: #888;
+    color: #333;
 }
 
 /* ============= Footer =============*/
