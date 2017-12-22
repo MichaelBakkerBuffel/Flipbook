@@ -299,6 +299,19 @@ article p {
   margin-right: 0px;
   margin-left: 0px;
 }
+
+/* ============= Breadcrumb =============*/
+.breadcrumb{
+    border: 1px solid #e7e7e7;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 0px;
+    color: #888;
+}
+
+.breadcrumb a{
+    color: #888;
+}
+
 /* ============= Footer =============*/
 footer{
     color: #fff;

@@ -5,6 +5,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
+                        <!-- Breadcrumbs -->
+                        <div class="breadcrumb">
+                            <a href="/">Home</a> >
+
+                            @foreach ($categories as $category)
+                                @if ($post->category_id == $category->id)
+                                    <a href="">{{$category->title}}</a>
+                                @endif
+                            @endforeach
+
+                            > <a href="">{{ $post->title }}</a>
+                            
+                        </div>
                         <article>
                             <div class="article-body-heading">
                                 <h2>{{ $post->title }}</h2>
