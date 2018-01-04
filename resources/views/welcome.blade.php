@@ -19,7 +19,6 @@
                 <a href="/voeding">Voeding</a>
                 <a href="/voeding">Valpreventie</a>
                 <a href="/voeding">Instanties</a>
-                <a href="/Instanties">Instanties</a>
                 <a href="/voeding">Mantelcheck</a>
             </div>
         </div>
