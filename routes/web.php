@@ -34,9 +34,9 @@ Route::get('/valpreventie', [
     'uses' => 'ContentController@index',
 ]);
 
-Route::get('/instanties', [
-    'uses' => 'ContentController@index',
-]);
+Route::get('/instanties', function () {
+    return view('blog.instanties');
+});
 
 Route::get('/mantelcheck', function () {
     return view('blog.mantelcheck');
