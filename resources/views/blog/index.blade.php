@@ -16,7 +16,7 @@
                 <h1>Voeding</h1>
                 <div class="img-container"><img src="img/voeding.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over voeding?</p>
-                <a href="category/1"><button>Meer informatie</button></a>
+                <a href="category/4"><button>Meer informatie</button></a>
             </div>
         </div>
         <div class="col-md-4 bodyblock">
@@ -24,7 +24,7 @@
                 <h1>Valpreventie</h1>
                 <div class="img-container"><img src="img/valpreventie.jpg" class="img-responsive" alt="Image"></div>
                 <p>Bent u op zoek naar informatie over valpreventie?</p>
-                 <a href="category/2"><button>Meer informatie</button> </a>
+                 <a href="category/5"><button>Meer informatie</button> </a>
             </div>
         </div>
         <div class="col-md-4 bodyblock">

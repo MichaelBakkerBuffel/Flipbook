@@ -38,6 +38,14 @@ Route::get('/mantelcheck', function () {
     return view('blog.mantelcheck');
 });
 
+Route::get('/instanties', function () {
+    return view('blog.instanties');
+});
+
+Route::get('/mezzo', function () {
+    return view('blog.instantiespagina');
+});
+
 Route::get('/category/post/{id}', [
     'uses' => 'ContentController@single',
 ]);
