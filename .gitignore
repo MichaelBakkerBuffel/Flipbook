@@ -16,3 +16,4 @@ README.md
 resources/views/blog/index.blade.php
 resources/views/blog/index.blade.php
 resources/views/blog/index.blade.php
+resources/views/layouts/main.blade.php

@@ -34,6 +34,10 @@ Route::get('/valpreventie', [
     'uses' => 'ContentController@index',
 ]);
 
+Route::get('/instanties', function () {
+    return view('blog.instanties');
+});
+
 Route::get('/mantelcheck', function () {
     return view('blog.mantelcheck');
 });
@@ -55,13 +59,8 @@ Route::resource('crud', 'CRUDController');
 // Login / Logout / Forgot register (Authentication)
 Auth::routes();
 // Dashboard Controller
-Route::get('/dashboard', 'Backend\HomeController@index');   
+Route::get('/dashboard', 'Backend\HomeController@index');
 // Backend CRUD articles
 Route::resource('/overview', 'Backend\ContentController');
 // Backend categories
 Route::resource('/categories', 'Backend\CategoriesController');
-
-
-
-
-

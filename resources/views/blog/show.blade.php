@@ -15,7 +15,17 @@
                         <p>Zoekresultaten<strong>{{ $term }}</strong></p>
                     </div>
                 @endif
+                <!-- Breadcrumbs -->
+                <div class="breadcrumb">
+                    <a href="/">Home</a> >
 
+                    @foreach ($categories as $category)
+                        @if ($posts[0]->category_id == $category->id)
+                            <a href="">{{$category->title}}</a>
+                        @endif
+                    @endforeach
+                    
+                </div>
                     @foreach($posts as $post)
                         <article>
                             <div class="article-heading">

@@ -30,7 +30,11 @@
                                 <li {{{ (Request::is('/') ? 'class=active' : '') }}} ><a href="{{ url('/') }}">Home</a></li>
                                 <li {{{ (Request::is('category/1') ? 'class=active' : '') }}} ><a href="{{ url('/category/1') }}">Voeding</a></li>
                                 <li {{{ (Request::is('category/2') ? 'class=active' : '') }}} ><a href="{{ url('/category/2') }}">Valpreventie</a></li>
+<<<<<<< HEAD
                                 <li {{{ (Request::is('instanties') ? 'class=active' : '') }}} ><a href="{{ url('/instanties') }}">Instanties</a></li> 
+=======
+                                <li {{{ (Request::is('instanties') ? 'class=active' : '') }}} ><a href="{{ url('/instanties') }}">Instanties</a></li>
+>>>>>>> a84e10dc04b4e0e9246dcf97b02d7b6dd7e137c2
                                 <li {{{ (Request::is('mantelcheck') ? 'class=active' : '') }}} ><a href="{{ url('/mantelcheck') }}">Mantelzorgtest</a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
